@@ -68,7 +68,7 @@ const Final = () => {
       <div className="container cyan"></div>
       <span className='here'>
         <h1 className='res'>Final Destination Unlocked</h1>
-        <h1 className='loc'>Library</h1>
+        <h1 className='loc'>Dubai Kuruku Sandhu</h1>
       </span>
     </div>
   );
