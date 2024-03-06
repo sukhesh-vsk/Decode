@@ -52,3 +52,10 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+.log {
+    color: red;
+    display: block;
+    text-align: end;
+    padding-top: 5px;
+}

@@ -1,7 +1,26 @@
 import React from 'react'
+import { useState } from 'react'
 import './Clue.css'
 
 const Clue = () => {
+  const [code, setCode] = useState('');
+  const [valid, setValid] = useState(false);
+  const [reveal, Reveal] = useState(false);
+  const drow = "ans";
+
+  const checkCode = () => {
+    if(code == drow) {
+      setValid(false);
+      Reveal(true);
+      console.log(code);
+      console.log("Correct");
+    }
+    else {
+      console.log(code);
+      setValid(true);
+    }
+  }
+  
   return (
     <section className='clue-section'>
       <div className='clue-container'>
@@ -14,10 +33,11 @@ const Clue = () => {
           </p>
         </div>
         <div className='clue-input'>
-          <input type='text' />
+          <input type='text' value={code} onChange={(e) => setCode(e.target.value)}/>
+          {(valid) && <span className='log'><span style={{fontWeight: "bold"}}>ⓘ</span> Incorrect PIN</span>}
         </div>
         <div className='clue-btn'>
-          <button>
+          <button onClick={checkCode}>
             Enter
           </button>
         </div>
