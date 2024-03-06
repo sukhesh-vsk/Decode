@@ -1,12 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 import './Clue.css'
+import Final from './Final';
 
 const Clue = () => {
   const [code, setCode] = useState('');
   const [valid, setValid] = useState(false);
   const [reveal, Reveal] = useState(false);
-  const drow = "ans";
+  const drow = "1234";
 
   const checkCode = () => {
     if(code == drow) {
@@ -22,6 +23,7 @@ const Clue = () => {
   }
   
   return (
+    (!reveal) ? (
     <section className='clue-section'>
       <div className='clue-container'>
         <div className='clue-head'>
@@ -42,7 +44,7 @@ const Clue = () => {
           </button>
         </div>
       </div>
-    </section>
+    </section> ) : (<Final />) 
   )
 }
 
