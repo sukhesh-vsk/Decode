@@ -1,9 +1,26 @@
 /* Global Styling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Circular Pro Book;
+    font-style: normal;
+    font-weight: 450;
+    src: url(./assets/fonts/CircularPro-Book.42502858.woff2) format("woff2"),url(./assets/fonts/CircularPro-Book.2b11a166.woff) format("woff")
+}
+
+@font-face {
+    font-family: Circular Pro Medium;
+    font-style: normal;
+    font-weight: 500;
+    src: url(./assets/fonts/CircularPro-Medium.a0c8c0d8.woff2) format("woff2"),url(./assets/fonts/CircularPro-Medium.80fc1af0.woff) format("woff")
+}
+
 body {
     background-color: black;
+    font-family: Circular Pro Medium,sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
-p {
-    color: "#f1f1f1" !important;
-}
-
