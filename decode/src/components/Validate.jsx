@@ -40,7 +40,7 @@ const Validate = () => {
                 renderSeparator={<span className="sep">-</span>}
                 renderInput={(props) => <input {...props} className="input-field"/>}
             />
-            {(valid) && <span className='log'><span style={{fontWeight: "bold"}}>ⓘ</span> Incorrect PIN</span>}
+            {(valid) && <span className='log' style={{animation: 'shake 0.5s'}}><span style={{fontWeight: "bold"}}>ⓘ</span> Incorrect PIN</span>}
           </div>
         </div>
         <div>

@@ -36,7 +36,7 @@ const Clue = () => {
         </div>
         <div className='clue-input'>
           <input type='text' value={code} onChange={(e) => setCode(e.target.value)}/>
-          {(valid) && <span className='log'><span style={{fontWeight: "bold"}}>ⓘ</span> Incorrect PIN</span>}
+          {(valid) && <span className='log' style={{animation: 'shake 0.5s'}}><span style={{fontWeight: "bold"}}>ⓘ</span> Incorrect PIN</span>}
         </div>
         <div className='clue-btn'>
           <button onClick={checkCode}>

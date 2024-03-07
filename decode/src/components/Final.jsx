@@ -67,7 +67,7 @@ const Final = () => {
       <div className="container darkblue"></div>
       <div className="container cyan"></div>
       <span className='here'>
-        <h1 className='res'>Final Destination Unlocked</h1>
+        <h1 className='res'>Run to your treasure!!!</h1>
         <h1 className='loc'>Library</h1>
       </span>
     </div>
