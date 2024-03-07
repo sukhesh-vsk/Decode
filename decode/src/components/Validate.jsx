@@ -5,7 +5,7 @@ import Clue from './Clue';
 
 const Validate = () => {
   const [key, setKey] = useState('');
-  const atad = "1234";
+  const atad = "1238";
   const [navigate, makeNavigate] = useState(false);
   const [valid, setValid] = useState(false);
   const makeValidate = () => {

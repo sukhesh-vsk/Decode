@@ -44,4 +44,22 @@
     font-size: 30px;
     color: #f1f1f1;
     margin: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .clue-container {
+        width: 80%;
+    }
+    .clue-input input {
+        width: 15rem;
+        height: 2rem;
+        font-size: 20px;
+    }
+    .clue-head h3 {
+        font-size: 20px;
+    }
+    .clue-label p {
+        margin-bottom: 2rem;
+    }
 }

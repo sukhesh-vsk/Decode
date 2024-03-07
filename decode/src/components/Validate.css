@@ -17,7 +17,7 @@
     border: 1px solid #f1f1f1;
     border-radius: 40px;
     background-color: #f1f1f1;
-    box-shadow: 0px 0px 10px 0.2px white;
+    box-shadow: 0px 0px 10px 0.2px rgb(147, 147, 147);
 }
 
 .card .val {
@@ -58,4 +58,56 @@
     display: block;
     text-align: end;
     padding-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 20rem;
+        height: 20rem;
+        box-shadow: 0px 0px 10px 0.2px rgb(147, 147, 147);
+    }
+
+    .validate-label {
+        font-size: 2rem;
+    }
+
+    .input-field {
+        height: 3rem;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .validate-button {
+        height: 2.5rem;
+        width: 6rem;
+        border-radius: 12px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .card {
+        width: 18rem;
+        height: 18rem;
+        box-shadow: 0px 0px 9px 0.2px rgb(147, 147, 147);
+    }
+
+    .validate-label {
+        font-size: 1.5rem;
+    }
+
+    .input-field {
+        height: 2.5rem;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+    .validate-button {
+        height: 2rem;
+        width: 5rem;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    .log {
+        font-size: 13px;
+    }
+
 }

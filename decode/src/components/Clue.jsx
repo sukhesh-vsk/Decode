@@ -7,7 +7,7 @@ const Clue = () => {
   const [code, setCode] = useState('');
   const [valid, setValid] = useState(false);
   const [reveal, Reveal] = useState(false);
-  const drow = "1234";
+  const drow = "LIBRARY";
 
   const checkCode = () => {
     if(code == drow) {
@@ -17,7 +17,7 @@ const Clue = () => {
       console.log("Correct");
     }
     else {
-      console.log(code);
+      setCode("");
       setValid(true);
     }
   }
@@ -27,11 +27,11 @@ const Clue = () => {
     <section className='clue-section'>
       <div className='clue-container'>
         <div className='clue-head'>
-          <h3>Can You able to Decode ??  :D</h3>
+          <h3>Unravel the Secret: Your Last Clue Awaits, Decode for Victory!</h3>
         </div>
         <div className='clue-label'>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit totam adipisci nemo. Dolorum labore omnis cum officia, sit nostrum, eius quidem sequi modi tempora culpa voluptatum repellendus dolore at rem!
+            You Are in the final cLue. If you cannot find it out Read the sentence again Buddy. if you have found Run towards it.
           </p>
         </div>
         <div className='clue-input'>
